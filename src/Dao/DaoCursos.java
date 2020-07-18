@@ -6,12 +6,7 @@ import java.util.List;
 
 
 public interface DaoCursos {
-    
-    void ingresar(Cursos cursos);
-    void actualizar(Cursos curso);
-    void eliminir(int id);
-    List<Cursos>getCursos();
-    
+     
     public List<Cursos> listaCursos();
 
     public void newCursos(Cursos cursos);
