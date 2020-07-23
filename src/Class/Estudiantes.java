@@ -1,5 +1,8 @@
 package Class;
-//package com.cursosonline.entidades;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Estudiantes {
 
@@ -7,6 +10,8 @@ public class Estudiantes {
     private String nombres;
     private String apellidos;
     private String email;
+    private List<Cursos> cursos=new ArrayList<>();
+    
 
     public Estudiantes() {
     }
@@ -49,6 +54,14 @@ public class Estudiantes {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public List<Cursos> getCursos() {
+        return cursos;
+    }
+
+    public void setCursos(List<Cursos> cursos) {
+        this.cursos = cursos;
+    }  
 
     @Override
     public String toString() {

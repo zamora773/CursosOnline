@@ -1,20 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Dao;
 
 import Class.Estudiantes;
 import java.util.List;
 
-/**
- *
- * @author core i5
- */
 public interface DaoEstudiantes {
 
-    public List<Estudiantes> listaEstudiantes();
+    public List<Estudiantes> getEstudiantesPorCurso(int estudianteId);
+
+    public List<Estudiantes> getListEstudiantes();
+
+    public Estudiantes searchEstudiante(int id);
 
     public void newEstudiantes(Estudiantes estudiantes);
 
